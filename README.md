@@ -1,0 +1,1 @@
+# get-IT-details-of-devoces
