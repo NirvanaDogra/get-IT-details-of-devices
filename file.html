@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+      
+     
+<html >
+    
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+             
+            
+            body {
+                margin: 0;
+                font-family: Arial;
+                font-size: 17px;
+            }
+            
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%; 
+                min-height: 100%;
+            }
+            
+            .content {
+                position: fixed;
+                bottom: 0;
+                min-width: 100%; 
+                max-height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding-bottom: 50%;
+            }
+            
+            
+        </style>
+    </head>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="ONGCvid.mp4" type="video/mp4">
+    </video>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="content">
+        <header class="w3-container w3-center"> 
+            <h1><b>Welcome!</b></h1>
+            <p> <span class="w3-tag">Enter the IP</span></p>
+        </header>
+        <body class="w3-light-grey">       
+        <p class="w3-container w3-center ">This is a project that the will give us the details of the connected devices</p>
+
+            <form class="w3-container w3-center w3-padding-32" action="Devices.php" method="post">
+                <input  type="text" name="First" placeholder="Ip 1" />
+
+                <input  type="text" name="second" placeholder="Ip 2" />
+            
+                <input type="submit" name="submit" />
+            </form> 
+   
+        </body>
+    </div>
+</html>
+  
